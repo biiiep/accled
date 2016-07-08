@@ -6,7 +6,7 @@
 #define NUM_LEDS    5
 
 #define BRIGHTNESS  5
-#define FRAMES_PER_SECOND 60
+#define FRAMES_PER_SECOND 20
 
 CRGB leds[NUM_LEDS];
 
