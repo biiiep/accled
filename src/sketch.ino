@@ -28,14 +28,17 @@ void loop()
 
 void MyFunc()
 {
-#if 0
+#if 1
 	static uint8_t initial = 0;
 
 	for (int i; i < NUM_LEDS; i++) {
-		//fill_rainbow(&leds[i], 1, initial + i * 20, 5);
-		leds[i] = initial << i;
+		//initial = random8();
+		fill_rainbow(&leds[i], 1, initial + i * 5, 5);
+		//leds[i] = initial << i;
 
 	}
+
+	initial++;
 #else
 	static uint8_t initial = 0;
 	static int up = 1;
@@ -60,10 +63,10 @@ void MyFunc()
 		up = 0;
 	if (initial == 0)
 		up = 1;
-#endif
 
 	if (up)
 		initial++;
 	else
 		initial--;
+#endif
 }
