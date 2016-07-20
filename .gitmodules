@@ -1,0 +1,9 @@
+[submodule "lib/Adafruit_ADXL345"]
+	path = lib/Adafruit_ADXL345
+	url = git@github.com:adafruit/Adafruit_ADXL345.git
+[submodule "lib/Adafruit_Sensor"]
+	path = lib/Adafruit_Sensor
+	url = git@github.com:adafruit/Adafruit_Sensor.git
+[submodule "lib/FastLED"]
+	path = lib/FastLED
+	url = git@github.com:FastLED/FastLED.git
